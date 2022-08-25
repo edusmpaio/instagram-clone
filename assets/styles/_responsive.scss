@@ -1,0 +1,35 @@
+@media (max-width: 950px) {
+  .main-container {
+    display: block;
+    max-width: 35rem;
+  }
+
+  .image-side {
+    display: none;
+  }
+
+  footer {
+    padding-top: 7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .border {
+    border: none;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .form-side {
+    form {
+      padding-top: 4rem;
+      background: #fafafa;
+    }
+
+    .sign-up {
+      background: #fafafa;
+    }
+  }
+}

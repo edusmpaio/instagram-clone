@@ -1,0 +1,133 @@
+.main-container {
+  display: grid;
+  width: 77rem;
+  grid-template-columns: 1fr 35rem;
+  margin: 0 auto;
+  column-gap: 3rem;
+  padding: 3rem 0 0;
+}
+
+.image-side {
+  height: 64rem;
+  background: url(./assets/images/image-main.png) no-repeat center center;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+  }
+}
+
+.form-side {
+  text-align: center;
+  padding-top: 1.5rem;
+
+  form {
+    @extend .border;
+    padding: 4.8rem 4rem 2rem;
+    background: #ffffff;
+
+    .instagram-logo {
+      margin-bottom: 3.6rem;
+    }
+
+    input {
+      font-size: 1.2rem;
+      background: #fafafa;
+      color: #262626;
+      width: 100%;
+      margin-bottom: 0.6rem;
+      padding: 0.9rem;
+      border: 1px solid #dbdbdb;
+      border-radius: 0.3rem;
+      outline: none;
+
+      &:focus {
+        border: 1px solid #8e8e8e;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background: #0095f6;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0.4rem;
+      margin-block: 0.8rem 1.8rem;
+
+      &:disabled {
+        background: #b2dffc;
+        cursor: default;
+      }
+    }
+
+    .divisor {
+      font-size: 1.3rem;
+      color: #8e8e8e;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.2rem;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 10.6rem;
+        height: 0.1rem;
+        background: #dbdbdb;
+      }
+    }
+
+    .facebook-login {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #385185;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+
+      img {
+        width: 1.5rem;
+      }
+    }
+
+    .forgot-password {
+      font-size: 1.2rem;
+      color: #00376b;
+    }
+  }
+
+  .sign-up {
+    @extend .border;
+    padding-block: 2rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    background: #ffffff;
+
+    a {
+      font-weight: 600;
+      color: #0095f6;
+    }
+  }
+
+  .get-app {
+    p {
+      font-size: 1.4rem;
+      margin-block: 2rem;
+    }
+
+    img {
+      width: 13.4rem;
+    }
+  }
+}

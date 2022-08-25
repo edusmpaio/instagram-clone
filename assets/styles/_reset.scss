@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 100;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.border {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+}
