@@ -2,13 +2,8 @@ const inputEmail = document.querySelector(".email-input");
 const inputPassword = document.querySelector(".password-input");
 const logInButton = document.querySelector(".login-button");
 
-inputEmail.addEventListener("keyup", () => {
-  checkInputs();
-});
-
-inputPassword.addEventListener("keyup", () => {
-  checkInputs();
-});
+inputEmail.addEventListener("keyup", checkInputs);
+inputPassword.addEventListener("keyup", checkInputs);
 
 function checkInputs() {
   if (inputEmail.value.length > 0 && inputPassword.value.length > 5) {
